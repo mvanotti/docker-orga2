@@ -1,0 +1,6 @@
+version: '3'
+services:
+  orga2:
+    build: .
+    volumes:
+      - ./:/code
