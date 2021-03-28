@@ -1,6 +1,9 @@
-version: '3'
+version: '3.7'
 services:
   orga2:
     build: .
     volumes:
-      - ./:/code
+      - './code/:/code'
+      - '/tmp/.X11-unix:/tmp/.X11-unix'
+    environment:
+      - 'DISPLAY=${DISPLAY}'
